@@ -154,7 +154,7 @@ async def lossless(e):
 
         cmd = (
             f'ffmpeg -i "{dl}" '
-            f'-preset fast '
+            f'-preset medium '
             f'-map 0:v:0 -map 0:a? -map 0:s? '
             f'-c:v libx265 -crf 20 '
             f'-c:a copy '
