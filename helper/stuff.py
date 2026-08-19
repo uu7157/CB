@@ -76,6 +76,7 @@ async def sencc(e):
                 Button.inline("Default Compress", data=f"encc{key}"),
                 Button.inline("Custom Compress", data=f"ccom{key}"),
             ],
+            [Button.inline("Lossless Compress", data=f"lossless{key}")],
             [Button.inline("Back", data=f"back{key}")],
         ],
     )
