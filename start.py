@@ -75,6 +75,9 @@ async def _(e):
 async def _(e):
     await encc(e)
 
+@cbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"lossless(.*)")))
+async def _(e):
+    await lossless(e)
 
 @cbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"sencc(.*)")))
 async def _(e):
